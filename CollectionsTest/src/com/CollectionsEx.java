@@ -16,24 +16,27 @@ public class CollectionsEx {
 			else
 				separator = "\n";
 			
-			System.out.println(e+separator);
+			System.out.print(e+separator);
 		}
 	}
 	
 	public static void main(String[] args) {
 		LinkedList<String> myList = new LinkedList<String>();
 		
-		myList.add("트랜드포머");
 		myList.add("스타워즈");
 		myList.add("메트릭스");
 		myList.add(0,"터미네이터");
 		myList.add(2,"아바타");
 		
-		Collections.sort(myList);
+		Collections.sort(myList); //정렬
 		printList(myList);
+		
+		System.out.println();
 	
-		Collections.reverse(myList);
+		Collections.reverse(myList); //reverse 정렬
 		printList(myList);
+		
+		System.out.println();
 		
 		int index = Collections.binarySearch(myList,"아바타")+1;
 		System.out.println("아바타는 "+ index+"번째 요소입니다.");		
